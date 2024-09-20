@@ -7,3 +7,4 @@ site: bookdown::bookdown_site
 
 # Physics
 
+Inspired by reading "The Theoretical Minimum" book series by Susskind and co, this website is a series of the simplest mathematical results I could find in those books, as well as other sources, that produce the most profound results or simply reproduce statements in physics that are often made in popular science media.
