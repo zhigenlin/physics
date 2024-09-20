@@ -1,4 +1,4 @@
-# Quantum Physics
+# Physics
 
 ## Quantum Physics: Entanglement
 
@@ -12,16 +12,24 @@ We will consider a possibly entangled system of two electrons. Electron spins ca
 
 Let the down state be $|0 \rangle$ and the up state be $|1 \rangle$.
 
-The spin state of an electron, $|\psi_{1} \rangle$, is expressed in the form of a "wavefunction".
+The full quantum spin state of an electron, $|\psi_{1} \rangle$ can be expressed in the form below.
 
-$|\psi_{1} \rangle=a_{1}|0 \rangle+b_{1}|1 \rangle$
+$$
+\begin{equation}
+|\psi_{1} \rangle=a_{1}|0 \rangle+b_{1}|1 \rangle
+\end{equation}
+$$
 
 The probability of the down state, given by the Born rule, is given by $|a_{1}|^2$. Note that $a_{1}$ can be a complex number.
 
 Now consider two electrons.
-$|\psi_{1} \rangle=a_{1}|0 \rangle+b_{1}|1 \rangle$
-$|\psi_{2} \rangle=a_{2}|0 \rangle+b_{2}|1 \rangle$
 
+$$
+\begin{equation}
+|\psi_{1} \rangle=a_{1}|0 \rangle+b_{1}|1 \rangle \\
+\left. |\psi_{2} \right\} = \left. a_{2}|0 \right\} + \left. b_{2}|1 \right\}
+\end{equation}
+$$
 The combined unentangled system, $|\Psi \rangle$,is given by the so-called "tensor product" of the two individual systems. Without defining the tensor product, it works in the way that you would expect. In the below calculations, in the two-numbered states, the first number refers to the spin of the first electron, and the second number refers to the spin of the second electron.
 
 $$
@@ -36,10 +44,15 @@ This means that a two-electron system that is entangled to any degree cannot be 
 
 As an example, take the so-called "singlet state" below.
 
-$|\Psi \rangle = \frac{1}{\sqrt{2}}|10\rangle - \frac{1}{\sqrt{2}}|01\rangle$
+$$
+\begin{equation}
+|sing \rangle = \frac{1}{\sqrt{2}}|10\rangle - \frac{1}{\sqrt{2}}|01\rangle
+\end{equation}
+$$
 
-One can easily verify that there could be no unique values for $a_{1}, a_{2}, b_{1}, b_{2}$ that could produce the singlet state. Hence, we know that the singlet state must be entangled to some extent (in fact, it is maximally entangled). Friedman and Susskind also mention ways to calculate the degree of entanglement, but that is a bit more involved.
 
-## Sources
+One can easily verify that there could be no unique values for $a_{1}, a_{2}, b_{1}, b_{2}$ that could produce the singlet state. Hence, we know that the singlet state must be entangled to some extent (in fact, it is maximally entangled). Susskind and Friedman (2015) also mention ways to calculate the degree of entanglement, but that is a bit more involved.
 
-"Quantum Mechanics: The Theoretical Minimum" (2015) by Friedman and Susskind
+## References
+
+Leonard Susskind, and Art Friedman. Quantum Mechanics: The Theoretical Minimum. Penguin Books, 2015. 

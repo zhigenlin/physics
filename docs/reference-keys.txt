@@ -1,5 +1,5 @@
 physics
-quantum-physics
+physics-1
 quantum-physics-entanglement
-sources
+references
 a-caucus-race-and-a-long-tale
