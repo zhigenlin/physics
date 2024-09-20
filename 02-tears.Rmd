@@ -55,4 +55,6 @@ One can easily verify that there could be no unique values for $a_{1}, a_{2}, b_
 
 ## References
 
-Leonard Susskind, and Art Friedman. Quantum Mechanics: The Theoretical Minimum. Penguin Books, 2015. 
+Leonard Susskind, and Art Friedman. Quantum Mechanics: The Theoretical Minimum. Penguin Books, 2015.
+
+Edit1
