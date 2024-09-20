@@ -2,7 +2,7 @@
 
 ## Quantum Physics: Entanglement
 
-Prerequisite: None
+Prerequisite: Vectors
 
 Quantum entanglement is defined as "the phenomenon of a group of particles being generated, interacting, or sharing spatial proximity in such a way that the quantum state of each particle of the group cannot be described independently of the state of the others, including when the particles are separated by a large distance".
 
