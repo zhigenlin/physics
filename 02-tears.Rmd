@@ -1,8 +1,10 @@
-# Physics
+# Quantum Mechanics
 
-## Quantum Physics: Entanglement
+## Entanglement
 
-Prerequisite: Vectors
+Prerequisites: Vectors, absolute value
+
+Main source: Susskind and Friedman (2015)
 
 Quantum entanglement is defined as "the phenomenon of a group of particles being generated, interacting, or sharing spatial proximity in such a way that the quantum state of each particle of the group cannot be described independently of the state of the others, including when the particles are separated by a large distance".
 
@@ -35,12 +37,12 @@ The combined unentangled system, $|\Psi \rangle$,is given by the so-called "tens
 $$
 \begin{equation}
 |\Psi \rangle = |\psi_{1}\rangle \otimes |\psi_{2}\rangle \\
-= (a_{1}|0 \rangle+b_{1}|1 \rangle) \otimes (a_{2}|0 \rangle+b_{2}|1 \rangle) \\
+= (a_{1}|0 \rangle+b_{1}|1 \rangle) \otimes (\left. a_{2}|0 \right\} + \left. b_{2}|1 \right\}) \\
 = a_{1}a_{2}|00\rangle + a_{1}b_{2}|10\rangle + b_{1}a_{2}|01\rangle + b_{1}b_{2}|11\rangle
 \end{equation}
 $$
 
-This means that a two-electron system that is entangled to any degree cannot be of the form above, even if the probabilities, as given by the Born rule, add up to 1. Such systems can be physically produced in a laboratory.
+This means that a two-electron system that is entangled to any degree cannot be of the form above, even if the probabilities, as given by the Born rule, add up to 1. Such systems can be physically produced in a laboratory.*
 
 As an example, take the so-called "singlet state" below.
 
@@ -53,8 +55,20 @@ $$
 
 One can easily verify that there could be no unique values for $a_{1}, a_{2}, b_{1}, b_{2}$ that could produce the singlet state. Hence, we know that the singlet state must be entangled to some extent (in fact, it is maximally entangled). Susskind and Friedman (2015) also mention ways to calculate the degree of entanglement, but that is a bit more involved.
 
+##  Uncertainty principle
+
+Prerequisites: Eigenvalues, eigenvectors (linear algebra); complex numbers
+
+Main source: [Quantum Sense](https://www.youtube.com/watch?v=-pRk9HNh7os))]
+
+In quantum mechanics, operators correspond to physical observables. Matrices are an example of such operators, specifically in cases relating to observables that take discrete values such as energy. When a measurement is performed, the observed value of the underlying physical quantity effectively settles into one of its eigenvalues. (Prior to the observation, it is in a superposition of its eigenvalues.) The eigenvectors correspond to the possible states ("eigenstates") in which the system can be found with a definite value of that observable.
+
+Operators $\hat{A}$ and $\hat{B}$ are said to 'commute' if $\hat{A}\hat{B}−\hat{B}\hat{A}=0$. If $\hat{A}$ and $\hat{B}$ commute and are "Hermitian" (each operator is equal to their conjugate transpose), then it can be shown that $\hat{A}$ and $\hat{B}$ share all their eigenvectors. Note, however, that those eigenvectors are not necessarily associated with the same eigenvalue.
+
+This  means, if $\hat{A}$ and $\hat{B}$ commute and are Hermitian, if you measure both $\hat{A}$ and $\hat{B}$, then you will reach an eigenvector that corresponds to one of the possible states of the system. This will transfer to observing a (likely differerent) eigenvalue of $\hat{A}$ and $\hat{B}$. The key point is that eigenvalues for both operators will be observed.
+
+On the other hand, if $\hat{A}$ and $\hat{B}$ do not commute, their eigenvectors are generally not the same. If you measure one observable (say, A), the system collapses into one of the eigenvectors of A, which in general is a superposition of the eigenvectors of B. This is how the uncertainty principle arises. It is the reason why certain pairs of observables cannot be measured simultaneously, most famously position and momentum, but also other pairs like energy and time itself.
+
 ## References
 
-Leonard Susskind, and Art Friedman. Quantum Mechanics: The Theoretical Minimum. Penguin Books, 2015.
-
-Edit1
+Susskind, L., & Friedman, A. Quantum Mechanics: The Theoretical Minimum. Penguin Books, 2015.

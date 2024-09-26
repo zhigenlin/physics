@@ -1,5 +1,6 @@
 physics
-physics-1
-quantum-physics-entanglement
+quantum-mechanics
+entanglement
+uncertainty-principle
 references
 a-caucus-race-and-a-long-tale

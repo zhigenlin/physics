@@ -9,4 +9,4 @@ site: bookdown::bookdown_site
 
 Inspired by reading "The Theoretical Minimum" book series by Susskind and co, this website is a series of the simplest mathematical results I could find in those books, as well as other sources, that either produce the most profound results or simply reproduce statements commonly quoted in physics documentaries.
 
-Edit1
+This is not a formal work, so I will be quoting or paraphrasing Wikipedia and YouTube videos at times. (In particular, I think some definitions of common terms from Wikipedia are useful as they likely represent the "community-majority" definition of something.)
