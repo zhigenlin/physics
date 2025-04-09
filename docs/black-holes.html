@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Black Holes | Physics</title>
+  <meta name="description" content="Chapter 2 Black Holes | Physics" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Black Holes | Physics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Black Holes | Physics" />
+  
+  
+  
+
+<meta name="author" content="Zhigen Lin" />
+
+
+<meta name="date" content="2025-04-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="quantum-mechanics.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Physics</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#physics" id="toc-physics"><span class="toc-section-number">1</span> Physics</a></li>
+<li><a href="black-holes.html#black-holes" id="toc-black-holes"><span class="toc-section-number">2</span> Black Holes</a>
+<ul>
+<li><a href="black-holes.html#light-cannot-escape-from-black-holes" id="toc-light-cannot-escape-from-black-holes"><span class="toc-section-number">2.1</span> Light cannot escape from black holes</a></li>
+<li><a href="black-holes.html#references" id="toc-references"><span class="toc-section-number">2.2</span> References</a></li>
+</ul></li>
+<li><a href="quantum-mechanics.html#quantum-mechanics" id="toc-quantum-mechanics"><span class="toc-section-number">3</span> Quantum Mechanics</a>
+<ul>
+<li><a href="quantum-mechanics.html#entanglement" id="toc-entanglement"><span class="toc-section-number">3.1</span> Entanglement</a></li>
+<li><a href="quantum-mechanics.html#uncertainty-principle" id="toc-uncertainty-principle"><span class="toc-section-number">3.2</span> Uncertainty principle</a></li>
+<li><a href="quantum-mechanics.html#references-1" id="toc-references-1"><span class="toc-section-number">3.3</span> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Physics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="black-holes" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Black Holes</h1>
+<div id="light-cannot-escape-from-black-holes" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Light cannot escape from black holes</h2>
+<p>General relativity is the theory developed by Einstein that predicts the existence of black holes, “cosmic bod[ies] of extremely intense gravity from which nothing, not even light, can escape”<a href="quantum-mechanics.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>The general mathematical intuition behind light, or anything else, not being able to escape from black holes is actually surprising simple.</p>
+<p>We all learn in high school that the length of the sides of a right-angled triangle is given by the Pythagorean theorem.</p>
+<p><span class="math display">\[
+\begin{equation}
+c^2=a^2+b^2
+\end{equation}
+\]</span>
+However, (the positive square root of) the right hand side of the above equation can also be thought of as the shortest distance between two points in a 2D map, assuming the ground is flat. In this case, <span class="math inline">\(a\)</span> would be the horizontal distance and <span class="math inline">\(b\)</span> would be the vertical distance (or vice versa).</p>
+<p>In other words, suppose I want to find the distance between where I’m sitting and the corner of the room. I am located at <span class="math inline">\((x_1,y_1,z_1)\)</span> and the corner of the room is at <span class="math inline">\((x_2,y_2,z_2)\)</span>. Then, the distance I want can be calculated using the equation below.</p>
+<p><span class="math display">\[
+\begin{equation}
+Distance=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}
+\end{equation}
+\]</span>
+Written more like the Pythagorean theorem, it would look like
+<span class="math display">\[
+\begin{equation}
+Distance^2=(\Delta x)^2+(\Delta y)^2+(\Delta z)^2,
+\end{equation}
+\]</span>
+where the Greek capital delta <span class="math inline">\(\Delta\)</span> refers to how much a quantity has changed between two values.</p>
+<p>In relativity, we consider the more general concept of a ‘spacetime interval’, denoted <span class="math inline">\(ds^2\)</span>, a kind of distance measure. One example of a spacetime interval (although just a space interval in this case), adapted from the equation above, can be written</p>
+<p><span class="math display">\[
+\begin{equation}
+ds^2=dx^2+dy^2+dz^2.
+\end{equation}
+\]</span></p>
+<p>The equation above relates to flat space. However, Einstein, in his special theory of relativity (1905), incorporates time into our model, creating ‘spacetime’.<a href="quantum-mechanics.html#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p><span class="math display">\[
+\begin{equation}
+ds^2=-dt^2+dx^2+dy^2+dz^2.
+\end{equation}
+\]</span>
+The spacetime interval above can be seen as a way to compare different journeys in spacetime.<a href="quantum-mechanics.html#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>Spacetime is flat in special relativity, which does not incorporate gravity. Think of it as the universe, but with nothing in it.</p>
+<p>In the general theory of relativity (1915), Einstein considers a curved spacetime.<a href="quantum-mechanics.html#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> One of the spacetime intervals that solves Einstein’s equations, called the Schwarzschild solution, is given below in simplified notation.</p>
+<p><span class="math display">\[
+\begin{equation}
+ds^2 = -\left(1 - \frac{2M}{r}\right) dt^2 + \frac{dr^2}{\left(1 - \frac{2M}{r}\right)} + r^2 d\theta^2 + r^2 \sin^2 \theta\, d\phi^2
+\end{equation}
+\]</span>
+We have converted into ‘spherical coordinates’, so instead of using <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span>, we are now using a radial coordinate <span class="math inline">\(r\)</span> (think the radius of a circle), along with two angular coordinates called ‘theta’ <span class="math inline">\(\theta\)</span> and ‘phi’ <span class="math inline">\(\phi\)</span>.^ In the spacetime interval, there is also the mass of an object of interest <span class="math inline">\(M\)</span>.<a href="quantum-mechanics.html#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<p>In fact, this spacetime interval describes a simple case of a non-spinning non-electrically-charged black hole. Apart from <span class="math inline">\(r=0\)</span>, which is the famous ‘singularity’ of a black hole, we can see that something interesting happens when <span class="math inline">\(r&lt;2M\)</span>.<a href="quantum-mechanics.html#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
+<p>When <span class="math inline">\(r&gt;2M\)</span>, the <span class="math inline">\(-(1-\frac{2M}{r})\)</span> term is negative and hence the behaviour is reminiscent of the special relativity case, where the <span class="math inline">\(dt\)</span> term is negative compared to other terms. When <span class="math inline">\(r&lt;2M\)</span>, both the <span class="math inline">\(dt^2\)</span> and <span class="math inline">\(dr^2\)</span> terms flip sign.</p>
+<p>If the object of interest is a black hole, then <span class="math inline">\(r=2M\)</span> is called the event horizon, also known as the Schwarzchild radius in this context.</p>
+<p>Since <span class="math inline">\(r\)</span> is a spatial term and <span class="math inline">\(t\)</span> is time term, it would be easy to say that space and time have switched places, but this would be inaccurate.</p>
+<p>We have all had our own experiences with space and time. We can go backwards and forwards in space. We can travel somewhere, then travel back to where we started. However, our experience with time is different. Time only ever seems to go forward and never backward.</p>
+<p>The main point of the argument is that past the <span class="math inline">\(r=2M\)</span> threshold, as we get closer to the black hole (the radius to the black hole <span class="math inline">\(r\)</span> decreases), our behaviour in space takes on a more time-like quality in that it can only ever go forward and never backward. This means we can only ever go forward into the centre of the black hole. Therefore, we have an explanation as to why “light cannot escape from black holes”. Past the event horizon, light (or anything) can only move forward toward the singularity, just like how our everyday experience of time is that it can only ever go forward.<a href="quantum-mechanics.html#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
+<p>To be most accurate on what exactly is happening when <span class="math inline">\(r&lt;2M\)</span>, here is exactly how some of the experts put it.<a href="quantum-mechanics.html#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></p>
+<p>Carroll (2022) writes that: “This behavior is sometimes expressed… as ‘time and space swap roles inside the event horizon of a black hole.’ No. What happens is that the coordinates <span class="math inline">\(t\)</span> and <span class="math inline">\(r\)</span> swap their roles. Coordinates are a human invention and you shouldn’t confuse them with fundamental features of reality. Time is still time and space is still space, no matter where we are or what coordinate system we are employing.”</p>
+<p>Earlier, Carroll (2022) explains: “<span class="math inline">\(t\)</span> is the timelike coordinate, while <span class="math inline">\(r\)</span> is a spacelike coordinate. But inside the horizon, these signs flip… <span class="math inline">\(t\)</span> is now spacelike, and <span class="math inline">\(r\)</span> is timelike. Physically, once we’re inside the Schwarzchild radius, moving to ever-smaller values of <span class="math inline">\(r\)</span> is not moving toward the center, it’s moving toward the future.”</p>
+<p>Susskind and Cabannes (2024) put it this way: “The singularity at <span class="math inline">\(r=0\)</span> is not a place, it is a time! More accurately, it is not a single place but many places all on a time-like curve.</p>
+<p>…once we got past the horizon, we cannot avoid eventually running into the singularity. Why? Because we cannot avoid the future… We can go around a place, but we cannot go around a time.”^^</p>
+<p>Later theories included electric charge and spin (angular momentum) into the analysis of black holes, but the fundamental conclusions regarding event horizons are the same.<a href="quantum-mechanics.html#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></p>
+<p>^ We could have converted to spherical coordinates earlier.</p>
+<p>For example, in the space-only equation,</p>
+<p><span class="math display">\[
+\begin{equation}
+ds^2=dx^2+dy^2+dz^2
+\\=dr^2 + r^2 d\theta^2 + r^2 \sin^2 \theta \, d\phi^2.
+\end{equation}
+\]</span></p>
+<p>The specific transformation being made is
+<span class="math display">\[
+\begin{equation}
+x = r \sin \theta \cos \phi, \quad
+y = r \sin \theta \sin \phi, \quad
+z = r \cos \theta.
+\end{equation}
+\]</span></p>
+<p>^^ The most precise way to describe what is going on is to define the words timelike and spacelike.</p>
+<p>Timelike trajectories are trajectories that we normally consider to be physically possible - travelling less than or equal to the speed of light. Spacelike trajectories require travel faster than the speed of light. They are better understood when plotted on a <a href="https://en.wikipedia.org/wiki/Spacetime_diagram">spacetime diagram</a>.</p>
+<p>Mathematics gives us more concrete conditions on these trajectories. For example, spacelike events correspond to</p>
+<p><span class="math display">\[
+\begin{equation}
+dx^2+dy^2+dz^2&gt;dt^2
+\end{equation}
+\]</span>
+in the special relativity equation.</p>
+</div>
+<div id="references" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> References</h2>
+<p>Carroll, S. The Biggest Ideas in the Universe Volume I: Space, Time and Motion. Oneworld, 2022.</p>
+<p>Susskind, L., &amp; Cabannes, A. General Relativity: The Theoretical Minimum. Penguin Books, 2024.</p>
+<p>The advantage is that it avoids the division by zero problem in the <span class="math inline">\(dr^2\)</span> term when <span class="math inline">\(r\)</span> is exactly equal to <span class="math inline">\(2M\)</span>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="quantum-mechanics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/zhigenlin/physics/edit/main/02-tears.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/zhigenlin/physics/blob/main/02-tears.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

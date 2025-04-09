@@ -1,89 +1,142 @@
-# Quantum Mechanics
+# Black Holes
 
-## Entanglement
+## Light cannot escape from black holes
 
-Prerequisites: vectors, absolute value
+General relativity is the theory developed by Einstein that predicts the existence of black holes, "cosmic bod[ies] of extremely intense gravity from which nothing, not even light, can escape"[^1].
 
-Quantum entanglement is defined as "the phenomenon of a group of particles being generated, interacting, or sharing spatial proximity in such a way that the quantum state of each particle of the group cannot be described independently of the state of the others, including when the particles are separated by a large distance".
+The general mathematical intuition behind light, or anything else, not being able to escape from black holes is actually surprising simple.
 
-We will consider a potentially entangled system of two electrons. Electron spins are 'quantised', and are hence measured to be either 'up' or 'down' (see [Stern-Gerlach experiment](https://en.wikipedia.org/wiki/Stern%E2%80%93Gerlach_experiment)).
-
-(For a more popular science-related analogy, consider a system of two Schrödinger's cat set-ups. Here, the system is entangled if observing the state of one cat affects the state of the other cat. They are not necessarily both be the same state, or opposite states. Entanglement can just mean that the likelihood of the state of the second cat will shift if you observe the first cat, or vice versa. Likewise, in our system of two electrons, measuring the spin of one electron does not necessarily make the other electron measure the same or the opposite spin - it merely changes the probability of the states of the spin of the second electron.)
-
-Let the down state be $|0 \rangle$ and the up state be $|1 \rangle$.
-
-The full quantum spin state of an electron, $|\psi_{1} \rangle$ can be expressed in the form below.
+We all learn in high school that the length of the sides of a right-angled triangle is given by the Pythagorean theorem.
 
 $$
 \begin{equation}
-|\psi_{1} \rangle=a_{1}|0 \rangle+b_{1}|1 \rangle
+c^2=a^2+b^2
 \end{equation}
 $$
+However, (the positive square root of) the right hand side of the above equation can also be thought of as the shortest distance between two points in a 2D map, assuming the ground is flat. In this case, $a$ would be the horizontal distance and $b$ would be the vertical distance (or vice versa).
 
-The probability of the down state, given by the Born rule, is given by $|a_{1}|^2$. Note that $a_{1}$ can be a complex number.
-
-Now consider two electrons.
+In other words, suppose I want to find the distance between where I'm sitting and the corner of the room. I am located at $(x_1,y_1,z_1)$ and the corner of the room is at $(x_2,y_2,z_2)$. Then, the distance I want can be calculated using the equation below.
 
 $$
 \begin{equation}
-|\psi_{1} \rangle=a_{1}|0 \rangle+b_{1}|1 \rangle \\
-\left. |\psi_{2} \right\} = \left. a_{2}|0 \right\} + \left. b_{2}|1 \right\}
+Distance=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}
 \end{equation}
 $$
-The combined unentangled system, $|\Psi \rangle$, is given by the so-called 'tensor product' of the two individual systems. Without formally defining the tensor product, it works in the way that you would expect when you think of it as simply multiplication. In the below calculations, in the two-numbered states, the first number refers to the spin of the first electron, and the second number refers to the spin of the second electron.
+Written more like the Pythagorean theorem, it would look like
+$$
+\begin{equation}
+Distance^2=(\Delta x)^2+(\Delta y)^2+(\Delta z)^2,
+\end{equation}
+$$
+where the Greek capital delta $\Delta$ refers to how much a quantity has changed between two values.
+
+In relativity, we consider the more general concept of a 'spacetime interval', denoted $ds^2$, a kind of distance measure. One example of a spacetime interval (although just a space interval in this case), adapted from the equation above, can be written
 
 $$
 \begin{equation}
-|\Psi \rangle = |\psi_{1}\rangle \otimes |\psi_{2}\rangle \\
-= (a_{1}|0 \rangle+b_{1}|1 \rangle) \otimes (\left. a_{2}|0 \right\} + \left. b_{2}|1 \right\}) \\
-= a_{1}a_{2}|00\rangle + a_{1}b_{2}|10\rangle + b_{1}a_{2}|01\rangle + b_{1}b_{2}|11\rangle
+ds^2=dx^2+dy^2+dz^2.
 \end{equation}
 $$
 
-This means that a two-electron system that is entangled to any degree cannot be of the form above, even if the probabilities, as given by the Born rule, add up to 1. Such systems can be physically produced in a laboratory.*
-
-As an example, take the so-called 'singlet state' below.
+The equation above relates to flat space. However, Einstein, in his special theory of relativity (1905), incorporates time into our model, creating 'spacetime'.[^2]
 
 $$
 \begin{equation}
-|sing \rangle = \frac{1}{\sqrt{2}}|10\rangle - \frac{1}{\sqrt{2}}|01\rangle
+ds^2=-dt^2+dx^2+dy^2+dz^2.
 \end{equation}
 $$
+The spacetime interval above can be seen as a way to compare different journeys in spacetime.[^3]
 
+Spacetime is flat in special relativity, which does not incorporate gravity. Think of it as the universe, but with nothing in it.
 
-One can easily verify that there could be no unique values for $a_{1}, a_{2}, b_{1}, b_{2}$ that could produce the singlet state. Hence, we know that the singlet state must be entangled to some extent (in fact, it is maximally entangled). Susskind and Friedman (2015) also mention ways to calculate the degree of entanglement.
-
-* Sean Carroll, in his "[Biggest Ideas in the Universe](https://youtu.be/IB50S4J4c8k?si=1Mr4VKENadIZhLCs&t=1749)" video series gives an example of how entanglement occurs in a simple example. In short, a pion can decay into two photons with opposing spins, but it is unclear which spin one of the photons has until you observe the other.
-
-One popular technique for creating entanglement in a laboratory setting is [spontaneous parametric down-conversion](https://en.wikipedia.org/wiki/Spontaneous_parametric_down-conversion).
-
-##  Uncertainty principle
-
-Prerequisites: linear algebra (eigenvalues, eigenvectors), complex numbers
-
-In quantum mechanics, observable quantities are represented by 'operators'. Matrices are an example of such operators, specifically in cases relating to observables that take discrete values such as energy. When a measurement is performed, the observed value of the underlying physical quantity effectively settles into one of its eigenvalues. Prior to the observation, the observable is in a superposition of its eigenvalues. The eigenvectors correspond to the possible states ('eigenstates') in which the system can be found with a definite value of that observable.
-
-Operators $\hat{A}$ and $\hat{B}$ are said to 'commute' if $\hat{A}\hat{B}−\hat{B}\hat{A}=0$. If $\hat{A}$ and $\hat{B}$ commute and are 'Hermitian' (each operator is equal to their conjugate transpose), then it can be shown that $\hat{A}$ and $\hat{B}$ share all their eigenvectors.* Note, however, that those eigenvectors are not necessarily associated with the same eigenvalue.
-
-This  means, if $\hat{A}$ and $\hat{B}$ commute and are Hermitian, if you measure both $\hat{A}$ and $\hat{B}$, firstly, you will reach an eigenvector that corresponds to one of the possible states of the system. This, in turn, corresponds to observing eigenvalues of both $\hat{A}$ and $\hat{B}$, which are generally different. These eigenvalues are the values that you observe for your physical quantities.
-
-On the other hand, if $\hat{A}$ and $\hat{B}$ do not commute, their eigenvectors are generally not the same. If you measure one observable (say, A), the system collapses into one of the eigenvectors of A, which in general is a superposition of the eigenvectors of $\hat{B}$. This is how the uncertainty principle arises. It is the reason why certain pairs of observables cannot be measured simultaneously, most famously position and momentum, but also other pairs like energy and time.
-
-The expression $\hat{A}\hat{B}−\hat{B}\hat{A}$ is known as the commutator. The key way in which the commutator is related to the Heisenberg uncertainty principle $\sigma_{\hat{x}}\sigma_{\hat{p}}\geq\hbar/2$ can be seen in the "Robertson uncertainty relation".
+In the general theory of relativity (1915), Einstein considers a curved spacetime.[^4] One of the spacetime intervals that solves Einstein's equations, called the Schwarzschild solution, is given below in simplified notation.
 
 $$
 \begin{equation}
-\sigma_{\hat{A}} \sigma_{\hat{B}} \geq \left| \frac{1}{2i} \langle [\hat{A}, \hat{B}] \rangle \right|
+ds^2 = -\left(1 - \frac{2M}{r}\right) dt^2 + \frac{dr^2}{\left(1 - \frac{2M}{r}\right)} + r^2 d\theta^2 + r^2 \sin^2 \theta\, d\phi^2
 \end{equation}
 $$
-Note that there is a stronger version of the above relation, known as the Robertson–Schrödinger uncertainty relation, as well as other strong related relations like the Maccone–Pati uncertainty relations.
+We have converted into 'spherical coordinates', so instead of using $x$, $y$ and $z$, we are now using a radial coordinate $r$ (think the radius of a circle), along with two angular coordinates called 'theta' $\theta$ and 'phi' $\phi$.^ In the spacetime interval, there is also the mass of an object of interest $M$.[^5]
 
-Although commutation relations are important in typical formulations of quantum mechanics (and the broader quantum field theory), I should also mention that an alternative way to prove the uncertainty principle is using Fourier transform methods, a ubiquitous tool in applied mathematics. The momentum-space wave function is simply the Fourier transform of the position-space wave function. In short, as these two 'spaces' can be seen as two orthogonal basis vectors in a vector space, it is obvious that there can be no wave functions that are simultaneously localised in both position and momentum, which is exactly the definition of the Heisenberg uncertainty principle. Carroll (2024) has a short appendix on this idea and Fourier transforms in general.
+In fact, this spacetime interval describes a simple case of a non-spinning non-electrically-charged black hole. Apart from $r=0$, which is the famous 'singularity' of a black hole, we can see that something interesting happens when $r<2M$.[^6]
 
-* I will conveniently skip over the proof of this statement, but you can find a great video about it in this YouTube video by [Quantum Sense](https://www.youtube.com/watch?v=-pRk9HNh7os).
+When $r>2M$, the $-(1-\frac{2M}{r})$ term is negative and hence the behaviour is reminiscent of the special relativity case, where the $dt$ term is negative compared to other terms. When $r<2M$, both the $dt^2$ and $dr^2$ terms flip sign.
+
+If the object of interest is a black hole, then $r=2M$ is called the event horizon, also known as the Schwarzchild radius in this context.
+
+Since $r$ is a spatial term and $t$ is time term, it would be easy to say that space and time have switched places, but this would be inaccurate.
+
+We have all had our own experiences with space and time. We can go backwards and forwards in space. We can travel somewhere, then travel back to where we started. However, our experience with time is different. Time only ever seems to go forward and never backward.
+
+The main point of the argument is that past the $r=2M$ threshold, as we get closer to the black hole (the radius to the black hole $r$ decreases), our behaviour in space takes on a more time-like quality in that it can only ever go forward and never backward. This means we can only ever go forward into the centre of the black hole. Therefore, we have an explanation as to why "light cannot escape from black holes". Past the event horizon, light (or anything) can only move forward toward the singularity, just like how our everyday experience of time is that it can only ever go forward.[^7]
+
+To be most accurate on what exactly is happening when $r<2M$, here is exactly how some of the experts put it.[^8]
+
+Carroll (2022) writes that: "This behavior is sometimes expressed... as 'time and space swap roles inside the event horizon of a black hole.' No. What happens is that the coordinates $t$ and $r$ swap their roles. Coordinates are a human invention and you shouldn't confuse them with fundamental features of reality. Time is still time and space is still space, no matter where we are or what coordinate system we are employing."
+
+Earlier, Carroll (2022) explains: "$t$ is the timelike coordinate, while $r$ is a spacelike coordinate. But inside the horizon, these signs flip... $t$ is now spacelike, and $r$ is timelike. Physically, once we're inside the Schwarzchild radius, moving to ever-smaller values of $r$ is not moving toward the center, it's moving toward the future."
+
+Susskind and Cabannes (2024) put it this way: "The singularity at $r=0$ is not a place, it is a time! More accurately, it is not a single place but many places all on a time-like curve.
+
+...once we got past the horizon, we cannot avoid eventually running into the singularity. Why? Because we cannot avoid the future... We can go around a place, but we cannot go around a time."^^
+
+Later theories included electric charge and spin (angular momentum) into the analysis of black holes, but the fundamental conclusions regarding event horizons are the same.[^9]
+
+^ We could have converted to spherical coordinates earlier.
+
+For example, in the space-only equation,
+
+$$
+\begin{equation}
+ds^2=dx^2+dy^2+dz^2
+\\=dr^2 + r^2 d\theta^2 + r^2 \sin^2 \theta \, d\phi^2.
+\end{equation}
+$$
+
+The specific transformation being made is
+$$
+\begin{equation}
+x = r \sin \theta \cos \phi, \quad
+y = r \sin \theta \sin \phi, \quad
+z = r \cos \theta.
+\end{equation}
+$$
+
+^^ The most precise way to describe what is going on is to define the words timelike and spacelike.
+
+Timelike trajectories are trajectories that we normally consider to be physically possible - travelling less than or equal to the speed of light. Spacelike trajectories require travel faster than the speed of light. They are better understood when plotted on a [spacetime diagram](https://en.wikipedia.org/wiki/Spacetime_diagram).
+
+Mathematics gives us more concrete conditions on these trajectories. For example, spacelike events correspond to
+
+$$
+\begin{equation}
+dx^2+dy^2+dz^2>dt^2
+\end{equation}
+$$
+in the special relativity equation.
 
 ## References
 
-Carroll, S. The Biggest Ideas in the Universe Volume II: Quanta and Fields. Oneworld, 2024.
+Carroll, S. The Biggest Ideas in the Universe Volume I: Space, Time and Motion. Oneworld, 2022.
 
-Susskind, L., & Friedman, A. Quantum Mechanics: The Theoretical Minimum. Penguin Books, 2015.
+Susskind, L., & Cabannes, A. General Relativity: The Theoretical Minimum. Penguin Books, 2024.
+
+[^1]: [The Editors of Encyclopaedia Britannica (2025, April 3). black hole. Encyclopedia Britannica.](https://www.britannica.com/science/black-hole)
+
+[^2]: [English translation](https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies)
+
+[^3]: The structure of the equation above gives a hint as to how the twin paradox can be resolved. Because of the negative sign in front of the time component, two spacetime interval values could potentially be the same if someone travels very fast through space but very little in time, versus someone who travels very little through space and hence must travel much further in time.
+
+[^4]: [English translation](https://en.wikisource.org/wiki/Translation:The_Field_Equations_of_Gravitation)
+
+[^5]: The Schwarzchild solution doesn't necessary need to represent a black hole. An object's radius could be larger than its supposed event horizon, in which case it would not be a black hole.
+
+[^6]: The analysis in the main body is cleaner if we transform into a different set of coordinates, called [Eddington-Finkelstein coordinates](https://en.wikipedia.org/wiki/Eddington%E2%80%93Finkelstein_coordinates), but the expression itself looks more intimidating.
+
+The advantage is that it avoids the division by zero problem in the $dr^2$ term when $r$ is exactly equal to $2M$.
+
+[^7]: There is a conjecture that black holes are the simplest macroscopic objects and they are fully defined by their charge, spin and mass (see the  [no-hair theorem](https://en.wikipedia.org/wiki/No-hair_theorem)).
+
+[^8]: I should note that I put the author's publishing dates as a reference, but these details have been known for much longer.
+
+[^9]: If the black hole you fall into has a large mass, you won't even notice that you're passing the event horizon (Carroll, 2022).
