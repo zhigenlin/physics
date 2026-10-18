@@ -5,6 +5,6 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Physics
+# Fundamental Physics
 
-Inspired by reading "The Theoretical Minimum" book series by Susskind and co-authors, this website is a series of the simplest mathematical results I could find in those books, as well as other sources, that either produce the most profound results or simply reproduce statements commonly quoted in physics media.
+This website contains a few simple and interesting mathematical results I found while reading the "The Theoretical Minimum" book series by Susskind and co-authors, "The Biggest Ideas in the Universe" book series by Sean M Carroll, and other sources that aim to simplify results from fundamental physics.

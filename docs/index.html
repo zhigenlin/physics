@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Physics</title>
   <meta name="description" content="Physics" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.48 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Physics" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Zhigen Lin" />
 
 
-<meta name="date" content="2025-04-09" />
+<meta name="date" content="2026-10-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +31,7 @@
   
   
 
-<link rel="next" href="black-holes.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<link rel="next" href="general-relativity.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,11 +49,16 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -73,17 +76,22 @@
 <li><a href="./">Physics</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#physics" id="toc-physics"><span class="toc-section-number">1</span> Physics</a></li>
-<li><a href="black-holes.html#black-holes" id="toc-black-holes"><span class="toc-section-number">2</span> Black Holes</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Fundamental Physics</a></li>
+<li class="chapter" data-level="2" data-path="general-relativity.html"><a href="general-relativity.html"><i class="fa fa-check"></i><b>2</b> General Relativity</a>
 <ul>
-<li><a href="black-holes.html#light-cannot-escape-from-black-holes" id="toc-light-cannot-escape-from-black-holes"><span class="toc-section-number">2.1</span> Light cannot escape from black holes</a></li>
-<li><a href="black-holes.html#references" id="toc-references"><span class="toc-section-number">2.2</span> References</a></li>
+<li class="chapter" data-level="2.1" data-path="general-relativity.html"><a href="general-relativity.html#light-cannot-escape-from-black-holes"><i class="fa fa-check"></i><b>2.1</b> Light cannot escape from black holes</a></li>
+<li class="chapter" data-level="2.2" data-path="general-relativity.html"><a href="general-relativity.html#references"><i class="fa fa-check"></i><b>2.2</b> References</a></li>
 </ul></li>
-<li><a href="quantum-mechanics.html#quantum-mechanics" id="toc-quantum-mechanics"><span class="toc-section-number">3</span> Quantum Mechanics</a>
+<li class="chapter" data-level="3" data-path="quantum-mechanics.html"><a href="quantum-mechanics.html"><i class="fa fa-check"></i><b>3</b> Quantum Mechanics</a>
 <ul>
-<li><a href="quantum-mechanics.html#entanglement" id="toc-entanglement"><span class="toc-section-number">3.1</span> Entanglement</a></li>
-<li><a href="quantum-mechanics.html#uncertainty-principle" id="toc-uncertainty-principle"><span class="toc-section-number">3.2</span> Uncertainty principle</a></li>
-<li><a href="quantum-mechanics.html#references-1" id="toc-references-1"><span class="toc-section-number">3.3</span> References</a></li>
+<li class="chapter" data-level="3.1" data-path="quantum-mechanics.html"><a href="quantum-mechanics.html#entanglement"><i class="fa fa-check"></i><b>3.1</b> Entanglement</a></li>
+<li class="chapter" data-level="3.2" data-path="quantum-mechanics.html"><a href="quantum-mechanics.html#uncertainty-principle"><i class="fa fa-check"></i><b>3.2</b> Uncertainty principle</a></li>
+<li class="chapter" data-level="3.3" data-path="quantum-mechanics.html"><a href="quantum-mechanics.html#references-1"><i class="fa fa-check"></i><b>3.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="quantum-field-theory.html"><a href="quantum-field-theory.html"><i class="fa fa-check"></i><b>4</b> Quantum Field Theory</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="quantum-field-theory.html"><a href="quantum-field-theory.html#uncertainty-principle-1"><i class="fa fa-check"></i><b>4.1</b> Uncertainty principle</a></li>
+<li class="chapter" data-level="4.2" data-path="quantum-field-theory.html"><a href="quantum-field-theory.html#references-2"><i class="fa fa-check"></i><b>4.2</b> References</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -107,11 +115,11 @@
 <div id="header">
 <h1 class="title">Physics</h1>
 <p class="author"><em>Zhigen Lin</em></p>
-<p class="date"><em>2025-04-09</em></p>
+<p class="date"><em>2026-10-18</em></p>
 </div>
-<div id="physics" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Physics</h1>
-<p>Inspired by reading “The Theoretical Minimum” book series by Susskind and co-authors, this website is a series of the simplest mathematical results I could find in those books, as well as other sources, that either produce the most profound results or simply reproduce statements commonly quoted in physics media.</p>
+<div id="fundamental-physics" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Fundamental Physics<a href="index.html#fundamental-physics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This website contains a few simple and interesting mathematical results I found while reading the “The Theoretical Minimum” book series by Susskind and co-authors, “The Biggest Ideas in the Universe” book series by Sean M Carroll, and other sources that aim to simplify results from fundamental physics.</p>
 
 </div>
             </section>
@@ -120,7 +128,7 @@
         </div>
       </div>
 
-<a href="black-holes.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="general-relativity.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -134,42 +142,42 @@
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/zhigenlin/physics/edit/main/index.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": "https://github.com/zhigenlin/physics/blob/main/index.Rmd",
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/zhigenlin/physics/edit/main/index.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": "https://github.com/zhigenlin/physics/blob/main/index.Rmd",
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>
@@ -180,7 +188,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

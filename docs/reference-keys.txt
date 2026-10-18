@@ -1,8 +1,11 @@
-physics
-black-holes
+fundamental-physics
+general-relativity
 light-cannot-escape-from-black-holes
 references
 quantum-mechanics
 entanglement
 uncertainty-principle
 references-1
+quantum-field-theory
+uncertainty-principle-1
+references-2
