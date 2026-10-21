@@ -7,4 +7,6 @@ site: bookdown::bookdown_site
 
 # Fundamental Physics
 
-This website contains a few simple and interesting mathematical results I found while reading the "The Theoretical Minimum" book series by Susskind and co-authors, "The Biggest Ideas in the Universe" book series by Sean M Carroll, and other sources that aim to simplify results from fundamental physics.
+Our current understanding of physics is governed by two theories, general relativity and the Standard Model of particle physics. The Standard Model is one implementation of a quantum field theory - simply the one that has had most experimental success.
+
+Exploring these topics, this website contains some mathematical results I found while reading the "The Theoretical Minimum" book series by Susskind and co-authors, "The Biggest Ideas in the Universe" book series by Sean M Carroll, and other sources that aim to simplify results from fundamental physics. In particular, I have tried to choose non-trivial results that require the least amount of mathematical background.
