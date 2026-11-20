@@ -7,6 +7,3 @@ quantum-mechanics
 entanglement
 uncertainty-principle
 references-1
-quantum-field-theory
-uncertainty-principle-1
-references-2
