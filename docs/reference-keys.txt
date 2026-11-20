@@ -1,6 +1,7 @@
 fundamental-physics
-general-relativity
-light-cannot-escape-from-black-holes
+relativity
+general-relativity-light-cannot-escape-from-black-holes
+special-relativity
 references
 quantum-mechanics
 entanglement

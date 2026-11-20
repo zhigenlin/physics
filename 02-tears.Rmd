@@ -1,12 +1,14 @@
-# General Relativity
+# Relativity
 
-## Light cannot escape from black holes
+## General relativity: Light cannot escape from black holes
+
+Prerequisites: High school mathematics
 
 General relativity is the theory developed by Einstein that predicts the existence of black holes, "cosmic bod[ies] of extremely intense gravity from which nothing, not even light, can escape"[^1].
 
 The general mathematical intuition behind light, or anything else, not being able to escape from black holes is actually surprising simple.
 
-We all learn in high school that the length of the sides of a right-angled triangle is given by the Pythagorean theorem.
+The Pythagorean theorem allows us to make calculations regarding the lengths of the sides of a right-angled triangle.
 
 $$
 \begin{equation}
@@ -115,6 +117,47 @@ dx^2+dy^2+dz^2>dt^2
 $$
 in the special relativity equation.
 
+## Special relativity
+
+Prerequisites: Taylor series (calculus)
+
+This really should have gone before the previous example chronologically, as special relativity is simpler than general relativity (literally a 'special' case of general relativity, when spacetime is flat), but the mathematical requirements for this example are more complex.
+
+According to special relativity, which takes into account objects travelling at or near the speed of light ($c \approx 300,000$ km/s), the formula for relativistic kinetic energy is
+
+$$K = \left(\frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} - 1\right) mc^2.$$
+
+Consider $K$ as a function of $v$. We can apply a concept that is ubiquitous in applied mathematics, Taylor series (or Taylor theorem).
+
+Expand the kinetic energy directly as a Taylor series about $v=0$:[^10]
+
+$$
+K(v)=K(0)+K'(0)v+\frac{K''(0)}{2}v^2+\cdots.
+$$
+
+Starting from $K(v)=mc^2\big[(1-v^2/c^2)^{-1/2}-1\big]$, we have $K(0)=0$. Differentiating with respect to $v$ gives
+
+$$
+K'(v)=mv\left(1-\frac{v^2}{c^2}\right)^{-3/2},
+$$
+
+so $K'(0)=0$. Differentiating again gives
+
+$$
+K''(v)=m\left(1-\frac{v^2}{c^2}\right)^{-3/2}
++\frac{3mv^2}{c^2}\left(1-\frac{v^2}{c^2}\right)^{-5/2}.
+$$
+
+At $v=0$, the first term equals $m$ and the second vanishes, so $K''(0)=m$.
+
+The first nonzero Taylor term is therefore $\tfrac12 K''(0)v^2$. When $v$ is much less than the speed of light ($v\ll c$), this gives the formula,
+
+$$
+\boxed{K \approx \tfrac12 mv^2}.
+$$
+
+This may look familiar. It is the commonly-taught formula for the kinetic energy of a non-rotating object with constant mass $m$ travelling at speed $v$. This teaches us that this formula is only accurate when $v$ is much less than the speed of light, but that is often true for many problems people want to study.
+
 ## References
 
 Carroll, S. The Biggest Ideas in the Universe Volume I: Space, Time and Motion. Oneworld, 2022.
@@ -140,3 +183,5 @@ The advantage is that it avoids the division by zero problem in the $dr^2$ term 
 [^8]: I should note that I put the author's publishing dates as a reference, but these details have been known for much longer.
 
 [^9]: If the black hole you fall into has a large mass, you won't even notice that you're passing the event horizon (Carroll, 2022).
+
+[^10]: Technically this is a Maclaurin series, just a Taylor series centred at 0. The calculation can also be done using the binomial series, itself a case of the Maclaurin series. The ideas all run along the same lines.
