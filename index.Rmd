@@ -13,4 +13,5 @@ Both theories have successfully passed extensive experimental testing. Conservat
 
 At everyday scales, complex physics mathematically simplifies into familiar rules. General relativity reduces to Newton's laws because we move slowly and Earth's gravity is relatively weak. Nuclear forces stay locked completely inside atomic nuclei. Quantum electrodynamics (the quantum version of electromagnetism) scales up into everyday forces like friction, light, and chemical bonds.
 
-Exploring these theories and their building blocks, this website contains some of the most familiar results with the least mathematical prerequisites I found while reading "The Theoretical Minimum" book series by Susskind and co-authors, "The Biggest Ideas in the Universe" book series by Sean M Carroll, and other sources of a similar spirit/difficulty level.
+Exploring these theories and their building blocks, this website contains some of the most familiar results in fundamental physics that have the least mathematical prerequisites. The examples are inspired from reading "The Theoretical Minimum" book series by Susskind and co-authors, "The Biggest Ideas in the Universe" book series by Sean M Carroll, and other 'mathematical'
+popular science sources.
